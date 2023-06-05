@@ -87,12 +87,12 @@ const Contact = () => {
                             name="accessKey" value="0dc6e925-5458-4bc2-828d-694bfed92643"
                         />
 
-                        <input type="hidden" name="redirectTo" value="hhttps://danielbarbosadev.vercel.app/contact" />
+                        <input type="hidden" name="redirectTo" value="https://danielbarbossdev.netlify.app/contact" />
 
                         <div className="form__input-div">
                             <input type="text"
                                 className="form__control"
-                                placeholder="Your Name"
+                                placeholder="Seu nome"
                                 name="name"
                             />
                         </div>
@@ -100,7 +100,7 @@ const Contact = () => {
                         <div className="form__input-div">
                             <input type="email"
                                 className="form__control"
-                                placeholder="Your Email"
+                                placeholder="Seu email"
                                 name="email"
                             />
                         </div>
@@ -108,7 +108,7 @@ const Contact = () => {
                         <div className="form__input-div">
                             <input type="text"
                                 className="form__control"
-                                placeholder="Your Subject"
+                                placeholder="Assunto..."
                                 name="subject"
                             />
                         </div>
@@ -116,7 +116,7 @@ const Contact = () => {
 
                     <div className="form__input-div">
                         <textarea
-                            placeholder="Your Message"
+                            placeholder="Sua mensagem"
                             className="form__control textarea"
                             name="message"></textarea>
                     </div>

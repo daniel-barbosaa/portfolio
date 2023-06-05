@@ -61,43 +61,43 @@ export const links = [
 export const personalInfo = [
   {
     id: 1,
-    title: 'First Name : ',
+    title: 'Nome : ',
     description: 'Daniel',
   },
 
   {
     id: 2,
-    title: 'Last Name : ',
+    title: 'Sobrenome : ',
     description: 'Barbosa',
   },
 
   {
     id: 3,
-    title: 'Age : ',
+    title: 'Idade : ',
     description: '21 Years',
   },
 
   {
     id: 4,
-    title: 'Nationality : ',
-    description: 'Brazilian',
+    title: 'Nacionalidade : ',
+    description: 'Brasileiro',
   },
 
   {
     id: 5,
     title: 'Freelance : ',
-    description: 'Available',
+    description: 'Disponível',
   },
 
   {
     id: 6,
-    title: 'Address : ',
+    title: 'Endereço : ',
     description: 'Brasil',
   },
 
   {
     id: 7,
-    title: 'Phone : ',
+    title: 'Fone : ',
     description: '+55 (38) 99728-2779',
   },
 
@@ -115,7 +115,7 @@ export const personalInfo = [
 
   {
     id: 10,
-    title: 'Langages : ',
+    title: 'Idioma : ',
     description: 'Português',
   },
 ];
