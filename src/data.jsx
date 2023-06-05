@@ -124,25 +124,25 @@ export const stats = [
   {
     id: 1,
     no: '1+',
-    title: 'Years of <br /> Experience',
+    title: 'Anos de <br /> experiência',
   },
 
   {
     id: 2,
     no: '9+',
-    title: 'Completed <br /> Projects',
+    title: 'Projetos <br /> completos',
   },
 
   {
     id: 3,
     no: '5+',
-    title: 'Happy <br /> Customers',
+    title: 'Clientes <br /> satisfeito',
   },
 
   {
     id: 4,
     no: '2+',
-    title: ' Awards <br /> Won',
+    title: ' Prêmios <br /> ganho',
   },
 ];
 
@@ -152,7 +152,7 @@ export const resume = [
     category: 'experience',
     icon: <FaBriefcase />,
     year: '2023 - PRESENT',
-    title: 'Web Developer <span> Envato </span>',
+    title: 'Desenvolvedor web <span> Recente </span>',
     desc: 'Desenvolvi um sistema de cadastro de usuários usando ReactJs, usando alguns hooks para criar estados da aplicação como useState, usando react-router-dom para criar rotas (páginas do sistema). Criei um sistema de servidor com nodeJs usando express para receber dados jSon da frente da minha aplicação, usei uuid para criar um ID único para cada usuário cadastrado.',
   },
 
@@ -161,7 +161,7 @@ export const resume = [
     category: 'experience',
     icon: <FaBriefcase />,
     year: '2023',
-    title: 'Web developer <span> Recent </span>',
+    title: 'Desenvolvedor web <span> Recente </span>',
     desc: 'Criei um sitema para uma hamburgueria, teve como o objetivo de receber dados do pedido do cliente até o local de preparo. Sitema desenvolvido com o ReactJs onde a página principal recebe os dados e nome do cliente, criei também um servidos com nodeJs onde gera e busca dados Json do Front, servidor Node que salva todos os dados novos criados. ',
   },
 
@@ -170,8 +170,8 @@ export const resume = [
     category: 'education',
     icon: <FaGraduationCap />,
     year: '2022',
-    title: 'FullStack developer <span> DevClub </span>',
-    desc: 'Ao longo dessa Formação, adquiri conhecimentos que agregaram muito no desenvolvimento da minha carreira, seja no aspecto técnico e qualidades interpessoais (soft skills). Nesse processo desenvolvemos algumas aplicações para fixar todo aprendizado decorrido ao longo do curso.',
+    title: '<span> DevClub </span>',
+    desc: 'Ao longo dessa Formação FullStack, adquiri conhecimentos que agregaram muito no desenvolvimento da minha carreira, seja no aspecto técnico e qualidades interpessoais (soft skills). Nesse processo desenvolvi algumas aplicações para fixar todo aprendizado decorrido ao longo do curso. Alguns dos sistemas que desenvolvi você consegue visualizar e ter uma experiência melhor utilizando cada ferramenta desenvolvida na página PORTFÓLIO. ',
   },
 ];
 
@@ -229,26 +229,26 @@ export const portfolio = [
   {
     id: 1,
     img: Work1,
-    title: 'WEB APPLICATION',
+    title: 'Registro de pedidos para hamburgueria',
     details: [
       {
         icon: <FiFileText />,
-        title: 'Project : ',
-        desc: 'Order taking system for a hamburger shop.',
+        title: 'Projeto : ',
+        desc: 'Sistema de recebimento de pedidos para uma hamburgueria.',
       },
       {
         icon: <FiUser />,
-        title: 'Client : ',
-        desc: 'My',
+        title: 'Cliente : ',
+        desc: 'Público',
       },
       {
         icon: <FaCode />,
-        title: 'Language : ',
+        title: 'Tecnologias : ',
         desc: 'JavaScript, React, Node with express',
       },
       {
         icon: <FiExternalLink />,
-        title: 'Preview : ',
+        title: 'Visualizar : ',
         desc: 'https://front-end-hamburger-project.vercel.app',
       },
     ],
@@ -257,26 +257,26 @@ export const portfolio = [
   {
     id: 2,
     img: Work2,
-    title: 'CALCULATOR WEB APP',
+    title: 'Calculadora web',
     details: [
       {
         icon: <FiFileText />,
-        title: 'Project : ',
-        desc: 'Web calculator',
+        title: 'Projeto : ',
+        desc: 'calculadora web',
       },
       {
         icon: <FiUser />,
-        title: 'Client : ',
-        desc: 'My app',
+        title: 'Cliente : ',
+        desc: 'Meu app',
       },
       {
         icon: <FaCode />,
-        title: 'technologies : ',
+        title: 'Tecnologias : ',
         desc: 'JavaScript, HTML, CSS',
       },
       {
         icon: <FiExternalLink />,
-        title: 'Preview : ',
+        title: 'Visualizar : ',
         desc: 'https://calculadora-two-eosin.vercel.app',
       },
     ],
@@ -285,26 +285,26 @@ export const portfolio = [
   {
     id: 3,
     img: Work3,
-    title: 'WEB APPLICATION',
+    title: 'Registro de usuários',
     details: [
       {
         icon: <FiFileText />,
-        title: 'Project : ',
-        desc: 'New user registration system',
+        title: 'Projeto : ',
+        desc: 'Sistema de cadastro de usuários',
       },
       {
         icon: <FiUser />,
-        title: 'Client : ',
-        desc: 'For me',
+        title: 'Cliente : ',
+        desc: 'Público',
       },
       {
         icon: <FaCode />,
-        title: 'Language : ',
-        desc: 'JavaScript, React, Node with express',
+        title: 'Tecnologias : ',
+        desc: 'JavaScript, React, Node com express',
       },
       {
         icon: <FiExternalLink />,
-        title: 'Preview : ',
+        title: 'Visualizar : ',
         desc: 'https://project-react-user-registration.vercel.app',
       },
     ],
@@ -313,26 +313,26 @@ export const portfolio = [
   {
     id: 4,
     img: Work4,
-    title: 'CONVERTER MONEY',
+    title: 'Conversor de moedas',
     details: [
       {
         icon: <FiFileText />,
-        title: 'Project : ',
-        desc: 'WEB APP CONVERTER MONEY',
+        title: 'Projeto : ',
+        desc: 'Aplicação conversor de moedas',
       },
       {
         icon: <FiUser />,
-        title: 'Client : ',
-        desc: 'For me',
+        title: 'Cliente : ',
+        desc: 'Público',
       },
       {
         icon: <FaCode />,
-        title: 'Language : ',
+        title: 'Tecnologias : ',
         desc: 'JavaScript, HTML, CSS',
       },
       {
         icon: <FiExternalLink />,
-        title: 'Preview : ',
+        title: 'Visualizar : ',
         desc: 'https://conversor-de-moedas-orpin.vercel.app',
       },
     ],
@@ -341,18 +341,18 @@ export const portfolio = [
   {
     id: 5,
     img: Work5,
-    title: 'WEB APP',
+    title: 'Calculadora indice de Massa Corporal',
     details: [
       {
-        title: 'Project : ',
-        desc: 'Web app, Body Mass Index Calculator',
+        title: 'Projeto : ',
+        desc: 'Aplicação web, Calculadora de Índice de Massa Corporal',
       },
       {
-        title: 'Client : ',
-        desc: 'For me',
+        title: 'Cliente : ',
+        desc: 'Público',
       },
       {
-        title: 'Language : ',
+        title: 'Tecnoligias : ',
         desc: 'JavaScript, HMTL, CSS',
       },
       {
@@ -364,26 +364,26 @@ export const portfolio = [
   {
     id: 6,
     img: Work6,
-    title: 'Guessing game',
+    title: 'Jogo de adivinhação',
     details: [
       {
         icon: <FiFileText />,
-        title: 'Project : ',
-        desc: 'Guessing game web',
+        title: 'Projeto: ',
+        desc: 'Jogo de adivinhação, usúario deve acertar o número igual gerado pela máquina.',
       },
       {
         icon: <FiUser />,
-        title: 'Client : ',
-        desc: 'My ',
+        title: 'Cliente: ',
+        desc: 'Público ',
       },
       {
         icon: <FaCode />,
-        title: 'Language : ',
+        title: 'Tecnologias : ',
         desc: 'JavaScript, HTML, CSS',
       },
       {
         icon: <FiExternalLink />,
-        title: 'Preview : ',
+        title: 'Visualizar : ',
         desc: 'https://my-guessing-game.vercel.app',
       },
     ],
@@ -391,26 +391,26 @@ export const portfolio = [
   {
     id: 7,
     img: Work7,
-    title: 'Digital watch',
+    title: 'Relógio digital',
     details: [
       {
         icon: <FiFileText />,
-        title: 'Project : ',
-        desc: 'Digital watch',
+        title: 'Projeto : ',
+        desc: 'Relógio digital da web',
       },
       {
         icon: <FiUser />,
-        title: 'Client : ',
-        desc: 'My ',
+        title: 'Cliente : ',
+        desc: 'Público ',
       },
       {
         icon: <FaCode />,
-        title: 'Language : ',
+        title: 'Tecnologias : ',
         desc: 'JavaScript, HTML, CSS',
       },
       {
         icon: <FiExternalLink />,
-        title: 'Preview : ',
+        title: 'Visualizar : ',
         desc: 'https://my-clock-gamma.vercel.app',
       },
     ],

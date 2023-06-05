@@ -8,7 +8,7 @@ const Portifolio = () => {
     return(
         <section className="portfolio section">
             <h2 className="section__title">
-                My <span>Portifolio</span>
+                Meu <span>Portfólio</span>
             </h2>
             <div className="portfolio__container container grid">
                 {
