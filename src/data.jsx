@@ -38,23 +38,23 @@ export const links = [
 
   {
     id: 2,
-    name: 'About',
+    name: 'Sobre',
     icon: <FaUser className='nav__icon' />,
-    path: '/about',
+    path: '/sobre',
   },
 
   {
     id: 3,
-    name: 'Portfolio',
+    name: 'Portfólio',
     icon: <FaFolderOpen className='nav__icon' />,
     path: '/portfolio',
   },
 
   {
     id: 4,
-    name: 'Contact',
+    name: 'Contato',
     icon: <FaEnvelopeOpen className='nav__icon' />,
-    path: '/contact',
+    path: '/contato',
   },
 ];
 

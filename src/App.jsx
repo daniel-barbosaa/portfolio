@@ -18,8 +18,8 @@ function App() {
       <Themes/>
       <Routes>
         <Route index element={<Home/>}/>
-        <Route path='about' element={<About/>}/>
-        <Route path='contact' element={<Contact/>}/>
+        <Route path='sobre' element={<About/>}/>
+        <Route path='contato' element={<Contact/>}/>
         <Route path='portfolio' element={<Portifolio/>}/>
       </Routes>
    </BrowserRouter>

@@ -75,7 +75,7 @@ const Themes = () => {
             </div>
 
             <h3 className="style__switcher-title">
-                Style Switcher
+                Alterar estilo
             </h3>
 
             <div className="style__switcher-item">

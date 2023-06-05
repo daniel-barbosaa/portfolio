@@ -3,9 +3,9 @@ import { FaDownload } from "react-icons/fa";
 
 import Info from "../../components/Info";
 import Stats from "../../components/Stats";
-import CV from "../../assets/steve-Cv.pdf"
+import CV from "../../assets/em-construcao.pdf"
 import Skills from '../../components/Skills'
-import {resume} from '../../data'
+import { resume } from '../../data'
 import { ResumeItem } from "../../components/ResumeItem";
 import './about.css'
 
@@ -14,14 +14,14 @@ const About = () => {
         <main className="section container">
             <section className="about">
                 <h2 className="section__title">
-                    About
-                    <span> Me</span>
+                    Sobre
+                    <span> Mim</span>
                 </h2>
 
                 <div className="about__container grid">
                     <div className="about__info">
                         <h3 className="section__subtitle">
-                            Personal Infos
+                            Informações pessoais
                         </h3>
 
                         <ul className="info__list grid">
@@ -35,7 +35,7 @@ const About = () => {
 
                     </div>
                     <div className="stats grid">
-                        <Stats/>
+                        <Stats />
                     </div>
 
                 </div>
@@ -45,10 +45,10 @@ const About = () => {
 
             <section className="skills">
                 <h3 className="section__subtitle subtitle__center">
-                    My Skils
+                    Minhas habilidades
                 </h3>
                 <div className="skills__container grid">
-                    <Skills/>
+                    <Skills />
                 </div>
             </section>
 
@@ -56,21 +56,21 @@ const About = () => {
 
             <section className="resume">
                 <h3 className="section__subtitle subtitle__center">
-                    Experience & Education
+                    Experiência e Educação
                 </h3>
 
                 <div className="resume__container grid">
                     <div className="resume__data">
-                        {resume.map((val)=>{
-                            if(val.category === 'experience'){
-                                return <ResumeItem key={val.id} {...val}/>;
+                        {resume.map((val) => {
+                            if (val.category === 'experience') {
+                                return <ResumeItem key={val.id} {...val} />;
                             }
                         })}
                     </div>
                     <div className="resume__data">
-                        {resume.map((val)=>{
-                            if(val.category === 'education'){
-                                return <ResumeItem key={val.id} {...val}/>;
+                        {resume.map((val) => {
+                            if (val.category === 'education') {
+                                return <ResumeItem key={val.id} {...val} />;
                             }
                         })}
                     </div>

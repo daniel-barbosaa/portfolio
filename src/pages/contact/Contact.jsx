@@ -14,12 +14,14 @@ const Contact = () => {
     return (
         <section className="contact section">
             <h2 className="section__title">
-                Get In <span>Touch</span>
+                entrar em <span>contato</span>
             </h2>
 
             <div className="contact__container grid">
                 <div className="contact__data">
-                    <h3 className="contact__title">Don't be shy</h3>
+                    <h3 className="contact__title">
+                        Não seja tímido
+                    </h3>
                     <p className="contact__description">
                         Me mande mensagem em algum desses contatos disponível e me diga em que posso te ajudar!
                     </p>
@@ -30,7 +32,7 @@ const Contact = () => {
 
                             <div>
                                 <span className="info__title">
-                                    Mail me
+                                    Envie-me um e-mail
                                 </span>
                                 <h4 className="info__desc">
                                     danielmendess.dev@gmail.com
@@ -43,7 +45,7 @@ const Contact = () => {
 
                             <div>
                                 <span className="info__title">
-                                    Call me
+                                    Liga para mim
                                 </span>
                                 <h4 className="info__desc">
                                     +55(38)99728-2779
@@ -57,19 +59,19 @@ const Contact = () => {
                             <FaFacebookF />
                         </a>
 
-                        <a href="https://www.instagram.com/daniel_mendes8/?next=%2F" className="contact__social-link" 
-                        target="_blank">
+                        <a href="https://www.instagram.com/daniel_mendes8/?next=%2F" className="contact__social-link"
+                            target="_blank">
                             <FaInstagram />
                         </a>
 
-                        <a href="https://github.com/DaniMendess" 
-                        className="contact__social-link"
-                        target="_blank">
+                        <a href="https://github.com/DaniMendess"
+                            className="contact__social-link"
+                            target="_blank">
                             <FaGithub />
                         </a>
 
                         <a href="https://www.linkedin.com/in/daniel-barbos/" className="contact__social-link"
-                        target="_blank">
+                            target="_blank">
                             <FaLinkedin />
                         </a>
 
@@ -80,12 +82,12 @@ const Contact = () => {
                 <form action={apiFormEmail} method="POST" className="form__contact__form">
 
                     <div className="form__input-group">
-                        
+
                         <input type="hidden"
-                          name="accessKey" value="0dc6e925-5458-4bc2-828d-694bfed92643"
+                            name="accessKey" value="0dc6e925-5458-4bc2-828d-694bfed92643"
                         />
 
-                        <input type="hidden" name="redirectTo" value="https://danielbarbossdev.netlify.app/contact"/>
+                        <input type="hidden" name="redirectTo" value="hhttps://danielbarbosadev.vercel.app/contact" />
 
                         <div className="form__input-div">
                             <input type="text"
@@ -114,15 +116,15 @@ const Contact = () => {
 
                     <div className="form__input-div">
                         <textarea
-                        placeholder="Your Message" 
-                        className="form__control textarea"
-                        name="message"></textarea>
+                            placeholder="Your Message"
+                            className="form__control textarea"
+                            name="message"></textarea>
                     </div>
 
                     <button className="button">
-                        Send Message
+                        Enviar mensagem
                         <span className="button__icon contact__button-icon">
-                            <FiSend/>
+                            <FiSend />
                         </span>
                     </button>
                 </form>
