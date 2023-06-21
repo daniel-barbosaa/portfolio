@@ -3,7 +3,7 @@ import React from "react";
 const apiFormEmail = "https://api.staticforms.xyz/submit"
 
 import {
-    FaEnvelopeOpen, FaPhoneSquareAlt, FaFacebookF, FaTwitter, FaYoutube, FaDribbble, FaInstagram, FaLinkedin, FaGithub
+    FaEnvelopeOpen, FaPhoneSquareAlt, FaFacebookF, FaInstagram, FaLinkedin, FaGithub
 } from 'react-icons/fa'
 
 import { FiSend } from "react-icons/fi"

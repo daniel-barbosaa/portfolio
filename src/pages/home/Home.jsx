@@ -13,9 +13,9 @@ const home = () => {
         <div className="home__data">
           <h1 className="home__title"><span>Eu sou Daniel Barbosa.</span> desenvolvedor web</h1>
           <p className="home__description">Sou desenvolvedor web, no Front-End tenho experiência com JavaScript, React, HTML, CSS, Styled-components. No Back-End possuo o conhecimento com NodeJs utilizando JavaScript, Express. Tenho como foco externar o meu potencial com o poder de todas essas tecnologias aperfeiçoando e mantendo sistemas web completos, com performace e levando uma excelente experiência de usuário. <br></br>
-          Deseja falar comigo entre na página de <Link to="https://danielbarbosadev.vercel.app/contact" className='nav__contact'>Contato</Link></p>
+          Deseja falar comigo entre na página de <Link to="/contato" className='nav__contact'>Contato</Link></p>
 
-          <Link to='/about' className='button'>
+          <Link to='/sobre' className='button'>
             Mais sobre mim
             <span className='button__icon'>
               <FaArrowRight />
