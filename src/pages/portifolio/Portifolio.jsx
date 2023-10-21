@@ -1,4 +1,3 @@
-import React from "react";
 import "./portifolio.css"
 
 import {portfolio} from '../../data'

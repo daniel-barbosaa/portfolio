@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import {
   FaHome,
   FaUser,
@@ -249,7 +251,7 @@ export const portfolio = [
       {
         icon: <FiExternalLink />,
         title: 'Visualizar : ',
-        desc: 'https://front-end-hamburger-project.vercel.app',
+        desc: <Link to="https://front-end-hamburger-project.vercel.app">Tenha uma experiência clicando aqui</Link>,
       },
     ],
   },
@@ -277,7 +279,7 @@ export const portfolio = [
       {
         icon: <FiExternalLink />,
         title: 'Visualizar : ',
-        desc: 'https://calculadora-two-eosin.vercel.app',
+        desc:<Link to='https://calculadora-two-eosin.vercel.app'>Tenha uma experiência clicando aqui</Link> ,
       },
     ],
   },
@@ -305,7 +307,7 @@ export const portfolio = [
       {
         icon: <FiExternalLink />,
         title: 'Visualizar : ',
-        desc: 'https://project-react-user-registration.vercel.app',
+        desc: <Link to='https://project-react-user-registration.vercel.app'>Tenha uma experiência clicando aqui</Link>,
       },
     ],
   },
@@ -333,7 +335,7 @@ export const portfolio = [
       {
         icon: <FiExternalLink />,
         title: 'Visualizar : ',
-        desc: 'https://conversor-de-moedas-orpin.vercel.app',
+        desc:<Link to='https://conversor-de-moedas-orpin.vercel.app'>Tenha uma experiência clicando aqui</Link> ,
       },
     ],
   },
@@ -357,7 +359,7 @@ export const portfolio = [
       },
       {
         title: 'Preview : ',
-        desc: 'https://imc-calculator-first.vercel.app',
+        desc:<Link to='https://imc-calculator-first.vercel.app'>Tenha uma experiência clicando aqui</Link>,
       },
     ],
   },
@@ -384,7 +386,7 @@ export const portfolio = [
       {
         icon: <FiExternalLink />,
         title: 'Visualizar : ',
-        desc: 'https://my-guessing-game.vercel.app',
+        desc: <Link to='https://my-guessing-game.vercel.app'>Tenha uma experiência clicando aqui</Link> ,
       },
     ],
   },
@@ -411,7 +413,7 @@ export const portfolio = [
       {
         icon: <FiExternalLink />,
         title: 'Visualizar : ',
-        desc: 'https://my-clock-gamma.vercel.app',
+        desc: <Link to='https://my-clock-gamma.vercel.app'>Tenha uma experiência clicando aqui</Link> ,
       },
     ],
   },

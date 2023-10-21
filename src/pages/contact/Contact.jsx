@@ -1,4 +1,4 @@
-import React from "react";
+/* eslint-disable react/jsx-no-target-blank */
 
 const apiFormEmail = "https://api.staticforms.xyz/submit"
 
@@ -87,7 +87,7 @@ const Contact = () => {
                             name="accessKey" value="0dc6e925-5458-4bc2-828d-694bfed92643"
                         />
 
-                        <input type="hidden" name="redirectTo" value="https://danielbarbossdev.netlify.app/contact" />
+                        <input type="hidden" name="redirectTo" value="https://danielbarbossdev.netlify.app" />
 
                         <div className="form__input-div">
                             <input type="text"

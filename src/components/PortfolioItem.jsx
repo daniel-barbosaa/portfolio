@@ -1,9 +1,8 @@
-import React from 'react'
+/* eslint-disable react/prop-types */
 import { useState } from 'react'
 import Close from "../assets/close.svg"
 
 const PortfolioItem = ({ img, title, details }) => {
-
     const [modal, setmodal] = useState(false)
 
     const toggleModal = () => {
@@ -38,7 +37,7 @@ const PortfolioItem = ({ img, title, details }) => {
                                              {title}
                                          </span>
                                          <span className="item__details">
-                                            {desc}
+                                           {desc}
                                          </span>
                                      </div>
                                  </li>
