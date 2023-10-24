@@ -1,16 +1,49 @@
 /* eslint-disable react/jsx-no-target-blank */
-
-const apiFormEmail = "https://api.staticforms.xyz/submit"
-
+import { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+import { toast, ToastContainer } from 'react-toastify';
+  import "react-toastify/dist/ReactToastify.css";
 import {
     FaEnvelopeOpen, FaPhoneSquareAlt, FaFacebookF, FaInstagram, FaLinkedin, FaGithub
 } from 'react-icons/fa'
-
 import { FiSend } from "react-icons/fi"
-
 import "./contact.css"
 
 const Contact = () => {
+
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+    
+        emailjs.sendForm('service_43rssbn', 'template_yddbkm7', form.current, 'TK8ev4WfXcPcg2HW_')
+          .then((result) => {
+              console.log(result.text);
+              toast.success('Email enviado com sucesso!', {
+                position: "top-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "light",
+                });
+          }, (error) => {
+              console.log(error.text);
+              toast.error('Erro ao enviar Email, tente novamente!', {
+                position: "top-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "light",
+                });
+          });
+      };
+
     return (
         <section className="contact section">
             <h2 className="section__title">
@@ -79,21 +112,15 @@ const Contact = () => {
                     </div>
                 </div>
 
-                <form action={apiFormEmail} method="POST" className="form__contact__form">
+                <form onSubmit={sendEmail} ref={form}className="form__contact__form">
 
                     <div className="form__input-group">
-
-                        <input type="hidden"
-                            name="accessKey" value="0dc6e925-5458-4bc2-828d-694bfed92643"
-                        />
-
-                        <input type="hidden" name="redirectTo" value="https://danielbarbossdev.netlify.app" />
-
+                        
                         <div className="form__input-div">
                             <input type="text"
                                 className="form__control"
                                 placeholder="Seu nome"
-                                name="name"
+                                name="user_name"
                             />
                         </div>
 
@@ -101,7 +128,7 @@ const Contact = () => {
                             <input type="email"
                                 className="form__control"
                                 placeholder="Seu email"
-                                name="email"
+                                name="user_email"
                             />
                         </div>
 
@@ -109,7 +136,7 @@ const Contact = () => {
                             <input type="text"
                                 className="form__control"
                                 placeholder="Assunto..."
-                                name="subject"
+                                name="user_subject"
                             />
                         </div>
                     </div>
@@ -129,6 +156,7 @@ const Contact = () => {
                     </button>
                 </form>
             </div>
+            <ToastContainer/>
         </section>
     )
 }
