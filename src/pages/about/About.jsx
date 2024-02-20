@@ -3,7 +3,7 @@ import { FaDownload } from "react-icons/fa";
 
 import Info from "../../components/Info";
 import Stats from "../../components/Stats";
-import CV from "../../assets/em-construcao.pdf"
+import CV from "../../assets/danielbarbosamendes.pdf"
 import Skills from '../../components/Skills'
 import { resume } from '../../data'
 import { ResumeItem } from "../../components/ResumeItem";

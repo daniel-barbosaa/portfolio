@@ -9,14 +9,14 @@ import {
   FaGraduationCap,
   FaCode,
 } from 'react-icons/fa';
-import { FiFileText, FiUser, FiExternalLink } from 'react-icons/fi';
+import { FiFileText, FiUser, FiExternalLink,FiGithub  } from 'react-icons/fi';
 
-import Work1 from './assets/project-hamburguer.png';
-import Work2 from './assets/calculator.png';
+import Work1 from './assets/myevents.png';
+import Work2 from './assets/codeburguer.png';
 import Work3 from './assets/users.png';
 import Work4 from './assets/converter-money.png';
 import Work5 from './assets/imc.png';
-import Work6 from './assets/my-game.png';
+import Work6 from './assets/lookapp.png';
 import Work7 from './assets/clock.png';
 
 import Theme1 from './assets/purple.png';
@@ -63,124 +63,113 @@ export const links = [
 export const personalInfo = [
   {
     id: 1,
-    title: 'Nome : ',
-    description: 'Daniel',
+    title: 'Nome: ',
+    description: 'Daniel Barbosa',
   },
-
-  {
-    id: 2,
-    title: 'Sobrenome : ',
-    description: 'Barbosa',
-  },
-
   {
     id: 3,
     title: 'Idade : ',
-    description: '21 Years',
+    description: '22 anos',
   },
 
   {
     id: 4,
-    title: 'Nacionalidade : ',
+    title: 'Nacionalidade: ',
     description: 'Brasileiro',
   },
 
   {
     id: 5,
-    title: 'Freelance : ',
+    title: 'Freelance: ',
     description: 'Disponível',
   },
 
   {
     id: 6,
-    title: 'Endereço : ',
-    description: 'Brasil',
+    title: 'Endereço: ',
+    description: 'Montes Claros MG',
   },
 
   {
     id: 7,
-    title: 'Fone : ',
-    description: '+55 (38) 99728-2779',
+    title: 'Whatsapp: ',
+    description: '(38) 99728-2779',
   },
 
   {
     id: 8,
-    title: 'Email : ',
+    title: 'Email: ',
     description: 'danielmendess.dev@gmail.com',
   },
 
-  {
-    id: 9,
-    title: 'Instagram: ',
-    description: 'daniel_mendes8',
-  },
+ 
+  
 
-  {
-    id: 10,
-    title: 'Idioma : ',
-    description: 'Português',
-  },
+  
 ];
 
 export const stats = [
   {
     id: 1,
-    no: '1+',
+    no: '2+',
     title: 'Anos de <br /> experiência',
   },
 
   {
     id: 2,
-    no: '9+',
-    title: 'Projetos <br /> completos',
+    no: '4+',
+    title: 'Projetos <br /> desenvolvidos',
   },
 
   {
     id: 3,
-    no: '5+',
-    title: 'Clientes <br /> satisfeito',
+    no: '3+',
+    title: 'Curso <br /> concluídos',
   },
 
-  {
-    id: 4,
-    no: '2+',
-    title: ' Prêmios <br /> ganho',
-  },
 ];
 
 export const resume = [
   {
     id: 1,
     category: 'experience',
-    icon: <FaBriefcase />,
-    year: '2023 - PRESENT',
-    title: 'Desenvolvedor web <span> Recente </span>',
-    desc: 'Desenvolvi um sistema de cadastro de usuários usando ReactJs, usando alguns hooks para criar estados da aplicação como useState, usando react-router-dom para criar rotas (páginas do sistema). Criei um sistema de servidor com nodeJs usando express para receber dados jSon da frente da minha aplicação, usei uuid para criar um ID único para cada usuário cadastrado.',
+    icon: <FaGraduationCap />,
+    year: '2023 ',
+    title: 'DevClub <span> Formação Fullstack </span>',
+    desc: 'Onde pude aprender o essencial do desenvolvimento full stack com JavaScript e React. Cobrindo desde o frontend com ReactJS até o backend com Node.js e Express. Banco de dados SQL e NoSQL com Postgres e MongoDB. Incluindo Docker e autenticação JWT. Desenvolvimento mobile com React Native. Projetos práticos durante toda a formação.',
   },
 
   {
     id: 2,
     category: 'experience',
-    icon: <FaBriefcase />,
+    icon: <FaGraduationCap />,
     year: '2023',
-    title: 'Desenvolvedor web <span> Recente </span>',
-    desc: 'Criei um sitema para uma hamburgueria, teve como o objetivo de receber dados do pedido do cliente até o local de preparo. Sitema desenvolvido com o ReactJs onde a página principal recebe os dados e nome do cliente, criei também um servidos com nodeJs onde gera e busca dados Json do Front, servidor Node que salva todos os dados novos criados. ',
+    title: 'Rocketseat ignite Reactjs <span> Andamento </span>',
+    desc: 'Estou aprimorando minhas habilidades em ReactJS, com foco em Typescript, Clean Architecture, pirâmide de testes, Next.js, performance, data fetching e cache local, e autenticação e autorização. O que é essencial e me preparará para enfrentar desafios no desevolvimento web moderno e construir sistemas performáticos e eficientes.',
   },
 
   {
     id: 4,
     category: 'education',
-    icon: <FaGraduationCap />,
+    icon: <FaBriefcase />,
     year: '2022',
-    title: '<span> DevClub </span>',
-    desc: 'Ao longo dessa Formação FullStack, adquiri conhecimentos que agregaram muito no desenvolvimento da minha carreira, seja no aspecto técnico e qualidades interpessoais (soft skills). Nesse processo desenvolvi algumas aplicações para fixar todo aprendizado decorrido ao longo do curso. Alguns dos sistemas que desenvolvi você consegue visualizar e ter uma experiência melhor utilizando cada ferramenta desenvolvida na página PORTFÓLIO. ',
+    title: 'MyEvents<span> plataforma online </span>',
+    desc: 'Desenvolvi uma plataforma de vendas de ingressos baseada no Sympla, utilizando Node.js com Fastify e React com Styled Components e Material-UI. Fui responsável por todas as etapas do projeto incluindo o design do layout no Figma, visando uma experiência de usuário moderna, simples e adaptativa. Utilizei Node.js com Fastify para construir um back end eficiente, integrando PostgreSQL via Neon. No front end, React com Styled Components e Material-UI. Implementei funcionalidades como login, cadastro, visualização de eventos e compra de ingressos com cartão de crédito, validação de formulários com Yup, além de realizar o design do layout no Figma.',
+  },
+  {
+    id: 5,
+    category: 'education',
+    icon: <FaBriefcase />,
+    year: '2022',
+    title: 'Codebuguer',
+    desc: 'Como parte do aprendizado no curso DevClub desenvolvi um projeto de uma hamburgueria virtual, que envolveu todas as etapas do processo e a entrega de uma aplicação funcional e de qualidade. O Backend utilizando Node.js com Express, integrando bancos de dados PostgreSQL e MongoDB para armazenar e gerenciar os dados da aplicação. Implementei autenticação JWT para garantir a segurança das informações dos usuários. No front end, utilizei React em conjunto com Material-UI para criar uma interface intuitiva, oferecendo uma experiência agradável aos usuário. Telas Destintas por ter usuário admin então permite a ele a administração da hamburgueria, como editar, adicionar, remover novos produtos.',
   },
 ];
 
 export const skills = [
   {
     id: 1,
-    title: 'Html',
+    title: 'HTML',
     percentage: '88',
   },
 
@@ -192,38 +181,63 @@ export const skills = [
 
   {
     id: 3,
-    title: 'Css',
+    title: 'CSS',
     percentage: '71',
   },
 
   {
     id: 4,
-    title: 'NodeJs',
-    percentage: '34',
+    title: 'React',
+    percentage: '62',
   },
 
   {
     id: 5,
-    title: 'styled-componets',
-    percentage: '38',
+    title: 'Styled-Componets',
+    percentage: '80',
   },
 
   {
     id: 6,
-    title: 'express',
-    percentage: '34',
+    title: 'Express',
+    percentage: '58',
   },
 
   {
     id: 7,
-    title: 'axios',
+    title: 'Axios',
     percentage: '48',
   },
 
   {
     id: 8,
-    title: 'React',
-    percentage: '45',
+    title: 'NodeJs',
+    percentage: '61',
+  },
+  {
+    id: 9,
+    title: 'Fastify',
+    percentage: '48',
+  },
+  {
+    id: 10,
+    title: 'Material UI',
+    percentage: '48',
+  },
+  {
+    id: 11,
+    title: 'Figma',
+    percentage: '33',
+  },
+  {
+    id: 12,
+    title: 'React-Native',
+    percentage: '47',
+  },
+  {
+    id: 13,
+    title: 'GIT e Github',
+    percentage: '63',
   },
 ];
 
@@ -231,27 +245,27 @@ export const portfolio = [
   {
     id: 1,
     img: Work1,
-    title: 'Registro de pedidos para hamburgueria',
+    title: 'MyEvents',
     details: [
       {
         icon: <FiFileText />,
         title: 'Projeto : ',
-        desc: 'Sistema de recebimento de pedidos para uma hamburgueria.',
+        desc: 'Plataforma de eventos baseada no Sympla.',
       },
       {
-        icon: <FiUser />,
-        title: 'Cliente : ',
-        desc: 'Público',
+        icon: <FiGithub />,
+        title: 'Github : ',
+        desc: <Link to= "https://github.com/daniel-barbosaa/myevents-front">Acesse o repositório </Link>,
       },
       {
         icon: <FaCode />,
         title: 'Tecnologias : ',
-        desc: 'JavaScript, React, Node with express',
+        desc: 'JavaScript, React, Styled-components, NodeJs, Fastify ',
       },
       {
         icon: <FiExternalLink />,
         title: 'Visualizar : ',
-        desc: <Link to="https://front-end-hamburger-project.vercel.app">Tenha uma experiência clicando aqui</Link>,
+        desc: <Link to="https://myevents-platform.vercel.app/eventos">Tenha uma experiência clicando aqui</Link>,
       },
     ],
   },
@@ -259,27 +273,22 @@ export const portfolio = [
   {
     id: 2,
     img: Work2,
-    title: 'Calculadora web',
+    title: 'Codeburguer',
     details: [
       {
         icon: <FiFileText />,
         title: 'Projeto : ',
-        desc: 'calculadora web',
+        desc: 'Esse é um projeto de uma hamburgueria completa com diferentes funcionalidades.',
       },
       {
-        icon: <FiUser />,
-        title: 'Cliente : ',
-        desc: 'Meu app',
+        icon: <FiGithub />,
+        title: 'Github : ',
+        desc: <Link to='https://calculadora-two-eosin.vercel.app'>Acesse o repositório</Link> ,
       },
       {
         icon: <FaCode />,
         title: 'Tecnologias : ',
-        desc: 'JavaScript, HTML, CSS',
-      },
-      {
-        icon: <FiExternalLink />,
-        title: 'Visualizar : ',
-        desc:<Link to='https://calculadora-two-eosin.vercel.app'>Tenha uma experiência clicando aqui</Link> ,
+        desc: 'JavaScript, React, Node, Express,PostgreSQL, JWT e outras.',
       },
     ],
   },
@@ -343,53 +352,55 @@ export const portfolio = [
   {
     id: 5,
     img: Work5,
-    title: 'Calculadora indice de Massa Corporal',
+    title: 'Calculadora IMC',
     details: [
       {
+        icon: <FiFileText />,
         title: 'Projeto : ',
-        desc: 'Aplicação web, Calculadora de Índice de Massa Corporal',
+        desc: 'Permite calcular o seu indíce de massa corporal com base nos dados fornecido por você.',
       },
       {
-        title: 'Cliente : ',
-        desc: 'Público',
+        icon: <FiGithub />,
+        title: 'Github : ',
+        desc: <Link to='https://github.com/daniel-barbosaa'>Acessar Repositório</Link>,
       },
       {
+        icon: <FaCode />,
         title: 'Tecnoligias : ',
         desc: 'JavaScript, HMTL, CSS',
       },
       {
+        icon: <FiExternalLink />,
         title: 'Preview : ',
         desc:<Link to='https://imc-calculator-first.vercel.app'>Tenha uma experiência clicando aqui</Link>,
       },
     ],
   },
+
   {
     id: 6,
     img: Work6,
-    title: 'Jogo de adivinhação',
+    title: 'LookApp',
     details: [
       {
         icon: <FiFileText />,
-        title: 'Projeto: ',
-        desc: 'Jogo de adivinhação, usúario deve acertar o número igual gerado pela máquina.',
-      },
-      {
-        icon: <FiUser />,
-        title: 'Cliente: ',
-        desc: 'Público ',
-      },
-      {
-        icon: <FaCode />,
-        title: 'Tecnologias : ',
-        desc: 'JavaScript, HTML, CSS',
+        title: 'Projeto : ',
+        desc: 'É uma aplicação semelhante a uma rede social, nela temos opção de Feed e realizar pedidos na loja do app. ',
       },
       {
         icon: <FiExternalLink />,
         title: 'Visualizar : ',
-        desc: <Link to='https://my-guessing-game.vercel.app'>Tenha uma experiência clicando aqui</Link> ,
+        desc: <Link to='https://imc-calculator-first.vercel.app'>Acesse aqui</Link>,
       },
+      {
+        icon: <FaCode />,
+        title: 'Tecnoligias : ',
+        desc: 'JavaScript, React-Native, Styled-Components, Async-Storage, Drawer-navigation, Stretchy',
+      },
+     
     ],
   },
+  
   {
     id: 7,
     img: Work7,
