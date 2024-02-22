@@ -2,16 +2,15 @@
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { toast, ToastContainer } from 'react-toastify';
-  import "react-toastify/dist/ReactToastify.css";
+import "react-toastify/dist/ReactToastify.css";
+import { MdOutlineEmail } from "react-icons/md";
 import {
-    FaEnvelopeOpen, FaPhoneSquareAlt, FaFacebookF, FaInstagram, FaLinkedin, FaGithub
+    FaEnvelopeOpen, FaPhoneSquareAlt, FaFacebookF, FaInstagram, FaLinkedin, FaGithub, FaArrowRight, FaWhatsapp 
 } from 'react-icons/fa'
 import { FiSend } from "react-icons/fi"
 import "./contact.css"
 
-/* Esse componente está sem uso, apenas um componente antigo e feito como modelo*/
-
-const Contact = () => {
+const Contacteste = () => {
 
     const form = useRef();
 
@@ -49,47 +48,76 @@ const Contact = () => {
     return (
         <section className="contact section">
             <h2 className="section__title">
-                entrar em <span>contato</span>
+                Entrar em <span>contato</span>
             </h2>
 
             <div className="contact__container grid">
                 <div className="contact__data">
-                    <h3 className="contact__title">
-                        Não seja tímido
-                    </h3>
-                    <p className="contact__description">
-                        Me mande mensagem em algum desses contatos disponível e me diga em que posso te ajudar!
-                    </p>
-
-                    <div className="contact__info">
-                        <div className="info__item">
-                            <FaEnvelopeOpen className="info__icon" />
-
-                            <div>
-                                <span className="info__title">
-                                    Envie-me um e-mail
-                                </span>
-                                <h4 className="info__desc">
-                                    danielmendess.dev@gmail.com
-                                </h4>
-                            </div>
+                    <div className='group_contact'>
+                        
+                        <div className='contact_item'>
+                            <FaLinkedin size={20}/>
+                            <p className='social_item_name'>Linkedin</p>
+                            <p className='social__address'>Daniel Barbosa</p>
+                            <p className='button__send'>Enviar <FaArrowRight/></p>
                         </div>
 
-                        <div className="info__item">
-                            <FaPhoneSquareAlt className="info__icon" />
+                        <div className='contact_item'>
+                            <FaWhatsapp size={20}/>
+                            <p className='social_item_name'>Whatsapp</p>
+                            <p className='social__address'>(38) 997282779</p>
+                            <p className='button__send'>Enviar <FaArrowRight/></p>
+                        </div>
+                        <div className='contact_item'>
+                            <MdOutlineEmail size={20}/>
+                            <p className='social_item_name'>Email</p>
+                            <p className='social__address'>danielbarboss.dev@gmail.com</p>
+                            <p className='button__send'>Enviar <FaArrowRight/></p>
+                        </div>
+                    </div>
+                </div>
 
-                            <div>
-                                <span className="info__title">
-                                    Liga para mim
-                                </span>
-                                <h4 className="info__desc">
-                                    +55(38)99728-2779
-                                </h4>
-                            </div>
+                <form onSubmit={sendEmail} ref={form}className="form__contact__form">
+
+                    <div className="form__input-group">
+                        <div className="form__input-div">
+                        <p className='label__name'>Nome</p>
+                            <input type="text"
+                                className="form__control"
+                                placeholder="Seu nome"
+                                name="user_name"
+                            />
+                        </div>
+
+                        <div className="form__input-div">
+                        <p className='label__name'>Email</p>
+                            <input type="email"
+                                className="form__control"
+                                placeholder="Seu email"
+                                name="user_email"
+                            />
                         </div>
                     </div>
 
-                    <div className="contact__socials">
+                    <div className="form__input-div">
+                    <p className='label__name'>Menssagem</p>
+                        <textarea
+                            placeholder="Sua mensagem"
+                            className="form__control textarea"
+                            name="message"
+                            id='teste'></textarea>
+                    </div>
+
+                
+                    <button className="button">
+                        Enviar mensagem
+                        <span className="button__icon contact__button-icon">
+                            <FiSend />
+                        </span>
+                    </button>
+                </form>
+            </div>
+            <div className="contact__socials">
                         <a href="" className="contact__social-link">
                             <FaFacebookF />
                         </a>
@@ -112,55 +140,9 @@ const Contact = () => {
 
 
                     </div>
-                </div>
-
-                <form onSubmit={sendEmail} ref={form}className="form__contact__form">
-
-                    <div className="form__input-group">
-                        
-                        <div className="form__input-div">
-                            <input type="text"
-                                className="form__control"
-                                placeholder="Seu nome"
-                                name="user_name"
-                            />
-                        </div>
-
-                        <div className="form__input-div">
-                            <input type="email"
-                                className="form__control"
-                                placeholder="Seu email"
-                                name="user_email"
-                            />
-                        </div>
-
-                        <div className="form__input-div">
-                            <input type="text"
-                                className="form__control"
-                                placeholder="Assunto..."
-                                name="user_subject"
-                            />
-                        </div>
-                    </div>
-
-                    <div className="form__input-div">
-                        <textarea
-                            placeholder="Sua mensagem"
-                            className="form__control textarea"
-                            name="message"></textarea>
-                    </div>
-
-                    <button className="button">
-                        Enviar mensagem
-                        <span className="button__icon contact__button-icon">
-                            <FiSend />
-                        </span>
-                    </button>
-                </form>
-            </div>
             <ToastContainer/>
         </section>
     )
 }
 
-export default Contact
+export default Contacteste

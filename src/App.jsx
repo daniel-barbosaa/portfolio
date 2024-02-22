@@ -7,6 +7,7 @@ import Themes from './components/Themes'
 import Home from './pages/home/Home'
 import About from './pages/about/About'
 import Contact from './pages/contact/Contact'
+import Contacteste from './pages/Contacteste/Contact'
 import Portifolio from './pages/portifolio/Portifolio'
 
  
@@ -20,7 +21,7 @@ function App() {
       <Routes>
         <Route index element={<Home/>}/>
         <Route path='sobre' element={<About/>}/>
-        <Route path='contato' element={<Contact/>}/>
+        <Route path='contato' element={<Contacteste/>}/>
         <Route path='portfolio' element={<Portifolio/>}/>
         <Route path="*" element={<Navigate to="/" />} />
 

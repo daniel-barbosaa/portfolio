@@ -1,4 +1,4 @@
-import Profile from "../../assets/profile.png"
+import Profile from "../../assets/design.png"
 import { Link } from 'react-router-dom'
 import { FaArrowRight } from 'react-icons/fa'
 
@@ -7,7 +7,9 @@ import "./home.css"
 const home = () => {
   return (
     <section className="home section grid">
-      <img src={Profile} alt="" className="home__img" />
+    
+        <img src={Profile} alt="" className="home__img" />
+    
       <div className="home__content">
         <div className="home__data">
           <h1 className="home__title"><span>Sou Daniel Barbosa.</span> desenvolvedor web</h1>
