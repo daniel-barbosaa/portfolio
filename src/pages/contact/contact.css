@@ -64,9 +64,9 @@
 
 .contact__socials {
     display: flex;
-    justify-content: end;
+    justify-content: center;
     column-gap: 16px;
-    margin: 30px 20px 0px 0px;
+    margin-top: 50px ;
 }
 
 .contact__social-link {

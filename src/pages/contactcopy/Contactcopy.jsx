@@ -11,7 +11,7 @@ import "./contact.css"
 
 /* Esse componente está sem uso, apenas um componente antigo e feito como modelo*/
 
-const Contact = () => {
+const Contacteste = () => {
 
     const form = useRef();
 
@@ -163,4 +163,4 @@ const Contact = () => {
     )
 }
 
-export default Contact
+export default Contacteste

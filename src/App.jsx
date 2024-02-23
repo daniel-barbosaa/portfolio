@@ -6,9 +6,8 @@ import Navbar from './components/Navbar'
 import Themes from './components/Themes'
 import Home from './pages/home/Home'
 import About from './pages/about/About'
-import Contact from './pages/Contact/Contact'
 import Portifolio from './pages/portifolio/Portifolio'
-
+import Contact from './pages/Contact/Contact'
  
 
 function App() {
