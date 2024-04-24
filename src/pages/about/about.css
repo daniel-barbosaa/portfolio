@@ -130,6 +130,10 @@
     border-radius: 50%;
     text-align: center;
     line-height: 40px ;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .resume__date {
@@ -166,4 +170,13 @@
 
 .resume__description {
     font-size: var(--smaller-font-size);
+}
+
+.about__button-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--h3-font-size);
+    line-height: 64px ;
+    cursor: pointer;
 }

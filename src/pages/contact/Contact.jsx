@@ -143,7 +143,7 @@ const Contact = () => {
                             <FaInstagram />
                         </a>
 
-                        <a href="https://github.com/DaniMendess"
+                        <a href="https://github.com/daniel-barbosaa"
                             className="contact__social-link"
                             target="_blank">
                             <FaGithub />

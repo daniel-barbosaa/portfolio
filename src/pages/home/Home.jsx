@@ -1,5 +1,4 @@
 import Profile from "../../assets/design.png"
-import { Link } from 'react-router-dom'
 import { FaArrowRight } from 'react-icons/fa'
 
 import "./home.css"
@@ -17,12 +16,12 @@ const home = () => {
           <br/>
           Além do front end, também tenho experiência na construção do back end, desenvolvendo APIs CRUD com <span className="strong__key">Node.js, Express e Fastify.</span> Acredito que a chave para o sucesso em qualquer projeto é um ambiente de estudo concentrado e organizado. Portanto, busco constantemente aperfeiçoar não apenas minhas habilidades técnicas, mas também minha abordagem metodológica para o desenvolvimento de software..</p>
 
-          <Link to='/sobre' className='button'>
+          <button to='/sobre' className='button'>
             Mais sobre mim
-            <span className='button__icon'>
+            <span className="button__icon contact__button-icon">
               <FaArrowRight />
             </span>
-          </Link>
+          </button>
         </div>
       </div>
 

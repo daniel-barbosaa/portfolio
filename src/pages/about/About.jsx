@@ -1,4 +1,3 @@
-import React from "react";
 import { FaDownload } from "react-icons/fa";
 
 import Info from "../../components/Info";
@@ -28,10 +27,10 @@ const About = () => {
                             <Info />
                         </ul>
 
-                        <a href={CV} download='' className="button">
+                        <button href={CV} className="button">
                             Download Cv
-                            <span className="button__icon"><FaDownload /></span>
-                        </a>
+                            <span className="button__icon about__button-icon"><FaDownload /></span>
+                        </button>
 
                     </div>
                     <div className="stats grid">
