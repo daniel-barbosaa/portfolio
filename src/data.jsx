@@ -172,62 +172,61 @@ export const skills = [
     title: 'HTML',
     percentage: '88',
   },
-
   {
     id: 2,
-    title: 'Javascript',
-    percentage: '76',
-  },
-
-  {
-    id: 3,
     title: 'CSS',
     percentage: '71',
   },
-
+  {
+    id: 3,
+    title: 'Javascript',
+    percentage: '76',
+  },
   {
     id: 4,
-    title: 'React',
+    title: 'Typescript',
+    percentage: '43',
+  },
+  {
+    id: 5,
+    title: 'Reactjs',
     percentage: '62',
+  },
+  {
+    id: 6,
+    title: 'Nextjs',
+    percentage: '41',
   },
 
   {
-    id: 5,
+    id: 7,
+    title: 'NodeJs',
+    percentage: '61',
+  },
+
+  {
+    id: 8,
     title: 'Styled-Componets',
     percentage: '80',
   },
 
   {
-    id: 6,
+    id: 9,
     title: 'Express',
     percentage: '58',
   },
 
   {
-    id: 7,
+    id: 10,
     title: 'Axios',
     percentage: '48',
   },
 
-  {
-    id: 8,
-    title: 'NodeJs',
-    percentage: '61',
-  },
-  {
-    id: 9,
-    title: 'Fastify',
-    percentage: '48',
-  },
-  {
-    id: 10,
-    title: 'Material UI',
-    percentage: '48',
-  },
+  
   {
     id: 11,
-    title: 'Figma',
-    percentage: '33',
+    title: 'Fastify',
+    percentage: '48',
   },
   {
     id: 12,
@@ -238,6 +237,11 @@ export const skills = [
     id: 13,
     title: 'GIT e Github',
     percentage: '63',
+  },
+  {
+    id: 14,
+    title: 'Sass',
+    percentage: '50',
   },
 ];
 
@@ -283,12 +287,17 @@ export const portfolio = [
       {
         icon: <FiGithub />,
         title: 'Github : ',
-        desc: <Link to='https://calculadora-two-eosin.vercel.app'>Acesse o repositório</Link> ,
+        desc: <Link to='https://github.com/daniel-barbosaa/code-burguer-app-front'>Acesse o repositório</Link> ,
       },
       {
         icon: <FaCode />,
         title: 'Tecnologias : ',
         desc: 'JavaScript, React, Node, Express,PostgreSQL, JWT e outras.',
+      },
+      {
+        icon: <FiExternalLink />,
+        title: 'Visualizar : ',
+        desc: <Link to="https://github.com/daniel-barbosaa/code-burguer-app-front">Tenha uma experiência clicando aqui</Link>,
       },
     ],
   },
@@ -304,9 +313,9 @@ export const portfolio = [
         desc: 'Sistema de cadastro de usuários',
       },
       {
-        icon: <FiUser />,
-        title: 'Cliente : ',
-        desc: 'Público',
+        icon: <FiGithub />,
+        title: 'Github : ',
+        desc: <Link to='https://github.com/daniel-barbosaa/project-react-user-registration'>Acesse o repositório</Link> ,
       },
       {
         icon: <FaCode />,
@@ -332,9 +341,9 @@ export const portfolio = [
         desc: 'Aplicação conversor de moedas',
       },
       {
-        icon: <FiUser />,
-        title: 'Cliente : ',
-        desc: 'Público',
+        icon: <FiGithub />,
+        title: 'Github : ',
+        desc: <Link to='https://github.com/daniel-barbosaa/conversor-de-moedas'>Acesse o repositório</Link> ,
       },
       {
         icon: <FaCode />,
@@ -371,7 +380,7 @@ export const portfolio = [
       },
       {
         icon: <FiExternalLink />,
-        title: 'Preview : ',
+        title: 'Visualizar : ',
         desc:<Link to='https://imc-calculator-first.vercel.app'>Tenha uma experiência clicando aqui</Link>,
       },
     ],
@@ -390,13 +399,18 @@ export const portfolio = [
       {
         icon: <FiExternalLink />,
         title: 'Visualizar : ',
-        desc: <Link to='https://imc-calculator-first.vercel.app'>Acesse aqui</Link>,
+        desc: <Link to='https://github.com/daniel-barbosaa/react-native-lookApp'>Acesse aqui</Link>,
       },
       {
         icon: <FaCode />,
         title: 'Tecnoligias : ',
         desc: 'JavaScript, React-Native, Styled-Components, Async-Storage, Drawer-navigation, Stretchy',
       },
+      {
+        icon: <FiGithub />,
+        title: 'Github : ',
+        desc: <Link to='https://github.com/daniel-barbosaa/react-native-lookApp'>Acessar Repositório</Link>,
+      }
      
     ],
   },
@@ -412,9 +426,9 @@ export const portfolio = [
         desc: 'Relógio digital da web',
       },
       {
-        icon: <FiUser />,
-        title: 'Cliente : ',
-        desc: 'Público ',
+        icon: <FiGithub />,
+        title: 'Github : ',
+        desc: <Link to='https://github.com/daniel-barbosaa/'>Acessar Repositório</Link>,
       },
       {
         icon: <FaCode />,

@@ -26,11 +26,14 @@ const About = () => {
                         <ul className="info__list grid">
                             <Info />
                         </ul>
-
-                        <button href={CV} className="button">
+                        <a href={CV} download="danielbarbosamendes.pdf">
+                        <button  className="button">
+                           
                             Download Cv
                             <span className="button__icon about__button-icon"><FaDownload /></span>
+                            
                         </button>
+                        </a>
 
                     </div>
                     <div className="stats grid">

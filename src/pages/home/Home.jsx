@@ -11,10 +11,13 @@ const home = () => {
     
       <div className="home__content">
         <div className="home__data">
-          <h1 className="home__title"><span>Sou Daniel Barbosa.</span> desenvolvedor web</h1>
-          <p className="home__description">Um entusiasta de tecnologia apaixonado por criar experiências incríveis na web. Com mais de dois anos de dedicação ao desenvolvimento de softwares, concentro-me principalmente no frontend onde me tornei especialista, transformo designs inspiradores por linhas de códigos utilizando <span className="strong__key">Javascript e React </span>. Desde que mergulhei no mundo da programação, tenho buscado aprimorar incessantemente minhas habilidades, sempre sedento por novos conhecimentos e novos desafios. 
+          <h1 className="home__title"><span>Sou Daniel Barbosa.</span> desenvolvedor Front-end</h1>
+          <p className="home__description">Um entusiasta de tecnologia apaixonado por criar experiências incríveis na web. Com mais de dois anos de dedicação ao desenvolvimento de softwares, com experiência no Frontend utilizando tecnologias como <span className="strong__key">JavaScript / TypeScript, Reactjs, Nextjs, Nodejs</span>. Tudo começou a partir de uma curiosidade de entender como os sites e aplicativos que usamos diariamente são construídos. 
+          Desde que mergulhei no mundo da programação, tenho buscado aprimorar incessantemente minhas habilidades, sempre sedento por novos conhecimentos e novos desafios. 
           <br/>
-          Além do front end, também tenho experiência na construção do back end, desenvolvendo APIs CRUD com <span className="strong__key">Node.js, Express e Fastify.</span> Acredito que a chave para o sucesso em qualquer projeto é um ambiente de estudo concentrado e organizado. Portanto, busco constantemente aperfeiçoar não apenas minhas habilidades técnicas, mas também minha abordagem metodológica para o desenvolvimento de software..</p>
+          Estou sempre em busca de oportunidades para aprender e crescer como profissional, animado para colaborar em projetos que desafiem minhas habilidades e me permitam contribuir para o mundo digital.
+          Fora do mundo do desenvolvimento, gosto de ouvir música, academia para botar o shape em dia, e uma boa leitura. Estou sempre aberto a novas oportunidades de aprendizado e colaboração, então sinta-se à vontade para entrar em contato comigo se quiser discutir projetos interessantes ou simplesmente para trocar ideias sobre tecnologia!
+          </p>
 
           <button to='/sobre' className='button'>
             Mais sobre mim
