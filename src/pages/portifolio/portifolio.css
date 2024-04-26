@@ -43,33 +43,12 @@
     transform: translateY(0);
 }
 
-
-.portfolio__modal {
-    position: fixed;
-    inset: 0;
-    background-color: hsla(0, 0%,0%, 0.7);
-    z-index: 1000;
-    display: grid;
-    place-items: center;
-    padding: 15px;
-}
-
 .portfolio__modal-content {
     background-color: var(--container-color);
-    max-width: 650px;
-    width: 100%;
+    max-width: 650px !important;
+    width: 100% !important;
     padding: 32px;
-    border-radius: 10px;
-    position: relative;
-}
-
-.modal__close {
-    position: absolute;
-    top: -3.5%;
-    right: -8.5%;
-    width: 40px;
-    height: 40px;
-    filter: invert(0.8);
+    border-radius: 5px;
 }
 
 .modal__title {
@@ -118,4 +97,17 @@
 
 .link__app {
     color: black;
+}
+
+span.item__details :last-of-type{
+   font-weight: bold;
+   transition: filter .3s;
+}
+
+span.item__details :last-of-type:hover {
+    filter: brightness(0.6);
+}
+
+span.item__details :last-of-type:active {
+   filter: brightness(0.4);
 }

@@ -1,31 +1,37 @@
 /* eslint-disable react/prop-types */
-import { useState } from 'react'
-import Close from "../assets/close.svg"
+import { useDisclosure } from '@chakra-ui/react';
+import {
+    Modal,
+    ModalOverlay,
+    ModalContent,
+    ModalBody,
+    ModalCloseButton,
+  } from '@chakra-ui/react'
 
 const PortfolioItem = ({ img, title, details }) => {
-    const [modal, setmodal] = useState(false)
+    const {onOpen, isOpen, onClose } = useDisclosure()
+    // const [modal, setmodal] = useState(false)
 
-    const toggleModal = () => {
-        setmodal(!modal)
-    }
+    // const toggleModal = () => {
+    //     setmodal(!modal)
+    // }
 
     return (
         <div className="portfolio__item">
             <img src={img} alt="imagem" className="portfolio__img" />
-
-            <div className="portfolio__hover" onClick={toggleModal} >
+            <div className="portfolio__hover" onClick={onOpen} >
                 <h3 className="portfolio__title">
                     {title}
                 </h3>
-
-               {modal && (
-                 <div className="portfolio__modal">
-                 <div className="portfolio__modal-content">
-                     <img src={Close} alt="botao-fechar" className='modal__close' onClick={toggleModal} />
-                     <h3 className="modal__title">
-                         {title}
-                     </h3>
-                     <ul className="modal__list grid">
+                <Modal isOpen={isOpen} onClose={onClose} className="portfolio__modal">
+                <ModalOverlay />
+                <ModalContent>
+                <ModalCloseButton />
+                <ModalBody className="portfolio__modal-content" >
+                    <h3 className="modal__title">
+                            {title}
+                    </h3>
+                    <ul className="modal__list grid">
                          {details.map(({icon,title,desc}, index ) => {
                              return (
                                  <li className="modal__item" key={index}>
@@ -44,12 +50,10 @@ const PortfolioItem = ({ img, title, details }) => {
                              )
                          })}
                      </ul>
-                     
                      <img src={img} alt="" className="modal__img" />
-
-                 </div>
-             </div>
-               )}
+                </ModalBody>
+                </ModalContent>
+            </Modal>
             </div>
         </div>
     )
