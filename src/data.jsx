@@ -9,7 +9,7 @@ import {
   FaGraduationCap,
   FaCode,
 } from 'react-icons/fa';
-import { FiFileText, FiUser, FiExternalLink,FiGithub  } from 'react-icons/fi';
+import { FiFileText, FiExternalLink,FiGithub  } from 'react-icons/fi';
 
 import Work1 from './assets/myevents.png';
 import Work2 from './assets/codeburguer.png';
@@ -18,6 +18,7 @@ import Work4 from './assets/converter-money.png';
 import Work5 from './assets/imc.png';
 import Work6 from './assets/lookapp.png';
 import Work7 from './assets/clock.png';
+import Work8 from './assets/capa-ignews.png';
 
 import Theme1 from './assets/purple.png';
 import Theme2 from './assets/red.png';
@@ -301,9 +302,36 @@ export const portfolio = [
       },
     ],
   },
-
   {
     id: 3,
+    img: Work8,
+    title: 'Ignews',
+    details: [
+      {
+        icon: <FiFileText />,
+        title: 'Projeto : ',
+        desc: 'Relógio digital da web',
+      },
+      {
+        icon: <FiGithub />,
+        title: 'Github : ',
+        desc: <Link to='https://github.com/daniel-barbosaa/'>Acessar Repositório</Link>,
+      },
+      {
+        icon: <FaCode />,
+        title: 'Tecnologias : ',
+        desc: 'JavaScript, HTML, CSS',
+      },
+      {
+        icon: <FiExternalLink />,
+        title: 'Visualizar : ',
+        desc: <Link to='https://my-clock-gamma.vercel.app'>Tenha uma experiência clicando aqui</Link> ,
+      },
+    ],
+  },
+
+  {
+    id: 4,
     img: Work3,
     title: 'Registro de usuários',
     details: [
@@ -331,7 +359,7 @@ export const portfolio = [
   },
 
   {
-    id: 4,
+    id: 5,
     img: Work4,
     title: 'Conversor de moedas',
     details: [
@@ -359,7 +387,7 @@ export const portfolio = [
   },
 
   {
-    id: 5,
+    id: 6,
     img: Work5,
     title: 'Calculadora IMC',
     details: [
@@ -387,7 +415,7 @@ export const portfolio = [
   },
 
   {
-    id: 6,
+    id: 7,
     img: Work6,
     title: 'LookApp',
     details: [
@@ -416,7 +444,7 @@ export const portfolio = [
   },
   
   {
-    id: 7,
+    id: 8,
     img: Work7,
     title: 'Relógio digital',
     details: [
