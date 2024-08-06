@@ -6,9 +6,7 @@ import "./home.css"
 const home = () => {
   return (
     <section className="home section grid">
-    
         <img src={Profile} alt="" className="home__img" />
-    
       <div className="home__content">
         <div className="home__data">
           <h1 className="home__title"><span>Sou Daniel Barbosa.</span> desenvolvedor Front-end</h1>

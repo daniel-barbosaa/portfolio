@@ -19,6 +19,7 @@ import Work5 from './assets/imc.png';
 import Work6 from './assets/lookapp.png';
 import Work7 from './assets/clock.png';
 import Work8 from './assets/capa-ignews.png';
+import Work9 from './assets/dashgoo.png';
 
 import Theme1 from './assets/purple.png';
 import Theme2 from './assets/red.png';
@@ -145,7 +146,7 @@ export const resume = [
     category: 'experience',
     icon: <FaGraduationCap />,
     year: '2023',
-    title: 'Rocketseat ignite Reactjs <span> Andamento </span>',
+    title: 'Rocketseat ignite Reactjs ',
     desc: 'Estou aprimorando minhas habilidades em ReactJS, com foco em Typescript, Clean Architecture, pirâmide de testes, Next.js, performance, data fetching e cache local, e autenticação e autorização. O que é essencial e me preparará para enfrentar desafios no desevolvimento web moderno e construir sistemas performáticos e eficientes.',
   },
 
@@ -329,9 +330,37 @@ export const portfolio = [
       },
     ],
   },
-
   {
     id: 4,
+    img: Work9,
+    title: 'Dashgo.',
+    details: [
+      {
+        icon: <FiFileText />,
+        title: 'Projeto : ',
+        desc: 'Dashboard de gestão de usuários',
+      },
+      {
+        icon: <FiGithub />,
+        title: 'Github : ',
+        desc: <Link to='https://github.com/daniel-barbosaa/'>Acessar Repositório</Link>,
+      },
+      {
+        icon: <FaCode />,
+        title: 'Tecnologias : ',
+        desc: 'Typescript, next.js, react.js, chakra.ui',
+      },
+      {
+        icon: <FiExternalLink />,
+        title: 'Visualizar : ',
+        desc: <Link to=''>Tenha uma experiência clicando aqui</Link> ,
+      },
+    ],
+  },
+
+
+  {
+    id: 5,
     img: Work3,
     title: 'Registro de usuários',
     details: [
@@ -359,7 +388,7 @@ export const portfolio = [
   },
 
   {
-    id: 5,
+    id: 6,
     img: Work4,
     title: 'Conversor de moedas',
     details: [
@@ -387,7 +416,7 @@ export const portfolio = [
   },
 
   {
-    id: 6,
+    id: 7,
     img: Work5,
     title: 'Calculadora IMC',
     details: [
@@ -415,7 +444,7 @@ export const portfolio = [
   },
 
   {
-    id: 7,
+    id: 8,
     img: Work6,
     title: 'LookApp',
     details: [
@@ -444,7 +473,7 @@ export const portfolio = [
   },
   
   {
-    id: 8,
+    id: 9,
     img: Work7,
     title: 'Relógio digital',
     details: [
